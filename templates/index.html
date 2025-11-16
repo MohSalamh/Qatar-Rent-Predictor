@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qatar Lease Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="../static/style.css"/> -->
+</head>
+
+<body>
+    <div class="img"></div>
+
+    <div class="container">
+
+        <!-- Start Screen -->
+        <div class="screen active" id="start-screen">
+            <h2>Qatar Lease Price Predictor</h2>
+
+            <form id="predict-form">
+                <!-- City Select -->
+                <label for="city">City</label>
+                <select id="city" class="drop-down" required>
+                    <option value="" selected="selected" disabled="disabled">-- Select City --</option>
+                    <option value="Doha">Doha</option>
+                </select>
+
+                <!-- District Select -->
+                <label for="district">District</label>
+                <select id="district" class="drop-down" required>
+                    <option value="" selected="selected" disabled="disabled">-- Select District --</option>
+                    <option value="Doha">Doha</option>
+                </select>
+
+                <!-- Property Type Select -->
+                <label for="property-type">Property Type</label>
+                <select id="property-type" class="drop-down" required>
+                    <option value="" selected="selected" disabled="disabled">-- Select Property Type --</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                </select>
+
+                <!-- Bedrooms -->
+                <p>Bedrooms</p>
+                <div class="radio-btns">
+                    <input type="radio" id="bedroom-1" name="bedrooms-select" value="1">
+                    <label for="bedroom-1">1</label>
+
+                    <input type="radio" id="bedroom-2" name="bedrooms-select" value="2">
+                    <label for="bedroom-2">2</label>
+
+                    <input type="radio" id="bedroom-3" name="bedrooms-select" value="3">
+                    <label for="bedroom-3">3</label>
+
+                    <input type="radio" id="bedroom-4" name="bedrooms-select" value="4">
+                    <label for="bedroom-4">4</label>
+
+                    <input type="radio" id="bedroom-5" name="bedrooms-select" value="5">
+                    <label for="bedroom-5">5</label>
+
+                    <input type="radio" id="bedroom-6" name="bedrooms-select" value="6">
+                    <label for="bedroom-6">6</label>
+
+                    <input type="radio" id="bedroom-7" name="bedrooms-select" value="7">
+                    <label for="bedroom-7">7</label>
+
+                    <input type="radio" id="bedroom-8" name="bedrooms-select" value="8">
+                    <label for="bedroom-8">8</label>
+
+                    <input type="radio" id="bedroom-9" name="bedrooms-select" value="9">
+                    <label for="bedroom-9">9</label>
+
+                    <input type="radio" id="bedroom-10" name="bedrooms-select" value="10">
+                    <label for="bedroom-10">10</label>
+                </div>
+                
+                <!-- Bathrooms -->
+                <p>Bathrooms</p>
+                <div class="radio-btns">
+                    <input type="radio" id="bathroom-1" name="bathrooms-select" value="1">
+                    <label for="bathroom-1">1</label>
+
+                    <input type="radio" id="bathroom-2" name="bathrooms-select" value="2">
+                    <label for="bathroom-2">2</label>
+
+                    <input type="radio" id="bathroom-3" name="bathrooms-select" value="3">
+                    <label for="bathroom-3">3</label>
+
+                    <input type="radio" id="bathroom-4" name="bathrooms-select" value="4">
+                    <label for="bathroom-4">4</label>
+
+                    <input type="radio" id="bathroom-5" name="bathrooms-select" value="5">
+                    <label for="bathroom-5">5</label>
+
+                    <input type="radio" id="bathroom-6" name="bathrooms-select" value="6">
+                    <label for="bathroom-6">6</label>
+
+                    <input type="radio" id="bathroom-7" name="bathrooms-select" value="7">
+                    <label for="bathroom-7">7</label>
+
+                    <input type="radio" id="bathroom-8" name="bathrooms-select" value="8">
+                    <label for="bathroom-8">8</label>
+
+                    <input type="radio" id="bathroom-9" name="bathrooms-select" value="9">
+                    <label for="bathroom-9">9</label>
+
+                    <input type="radio" id="bathroom-10" name="bathrooms-select" value="10">
+                    <label for="bathroom-10">10</label>
+                </div>
+                
+                <!-- Area Input-->
+                <label for="size">Size (sqm)</label>
+                <input type="number" id="size" placeholder="Property Size (Sqm)" required>
+
+                <!-- Predict Button -->
+                <button id="predict-btn" type="button">Predict Rent</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+        <!-- Restart Screen -->
+        <div class="screen" id="predict-screen">
+            <h2>Monthly Predicted Rent</h2>
+            <div class="summary" id="property-summary"></div>
+            <div id="prediction-result"></div>
+            <button id="predict-another-btn" type="button">Predict Another Property</button>
+        </div>
+
+    </div>
+
+    <!-- <script src="../static/appscript.js"></script> -->
+    <script src="{{ url_for('static', filename='appscript.js') }}"></script>
+</body>
+</html>
