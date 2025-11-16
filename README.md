@@ -23,9 +23,8 @@ The application is deployed on an **AWS EC2 instance** and can be accessed here:
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-
+- [Usage](#usage)
+  
 ---
 
 ## Project Overview
