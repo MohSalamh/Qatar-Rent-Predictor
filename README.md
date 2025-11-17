@@ -57,8 +57,34 @@ The application serves predictions through a **Flask backend**, which interacts 
 ## Installation
 
 1. **Clone the repository:**
-
 ```bash
 git clone https://github.com/MohSalamh/Qatar-Rent-Predictor.git
 cd Qatar-Rent-Predictor
 ```
+
+2. **Create & Activate Virtual Environment (Windows)**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the Flask Backend**
+```bash
+python server.py
+```
+When the server starts, you should see this:
+```bash
+* Running on http://127.0.0.1:5000
+```
+
+5. **Access the Web App**
+Open your browser and go to:
+```bash
+http://127.0.0.1:5000
+```
+
