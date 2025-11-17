@@ -82,7 +82,7 @@ When the server starts, you should see this:
 * Running on http://127.0.0.1:5000
 ```
 
-5. **Access the Web App**
+5. **Access the Web App** <br>
 Open your browser and go to:
 ```bash
 http://127.0.0.1:5000
