@@ -9,14 +9,6 @@ This project is a web application that predicts rent prices in Qatar based on va
 
 ---
 
-## Live Demo
-
-The application is deployed on an **AWS EC2 instance** and can be accessed here:
-
-🔗 **Live App:** [Qatar Rent Predictor App](http://ec2-56-228-11-174.eu-north-1.compute.amazonaws.com/)
-
----
-
 ## Table of Contents
 
 - [Project Overview](#project-overview)  
